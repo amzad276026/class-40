@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gallery</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>Gallery</h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/gallery.html">Gallery</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                    <li><a href="../pages/form.html">Form</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Gallery Form</h2>
+            </div>
+            <div>
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend>Gallery Feedback</legend>
+                        <p>
+                            <label for="username">
+                                Username:
+                                <input
+                                    type="text"
+                                    id="username"
+                                    name="username"
+                                    placeholder="Enter your username"
+                                />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="email">
+                                Email:
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                />
+                            </label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Rate Our Gallery</legend>
+                        <p>
+                            <label for="rating">
+                                Rating:
+                                <input
+                                    type="range"
+                                    max="10"
+                                    name="rating"
+                                    id="rating"
+                                />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="fcolor">
+                                Favorite Color:
+                                <input type="color" name="fcolor" id="fcolor" />
+                            </label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Event Date & Time</legend>
+                        <p>
+                            <label for="event-datetime">
+                                Event Date & Time:
+                                <input
+                                    type="datetime-local"
+                                    name="event-datetime"
+                                    id="event-datetime"
+                                    min="2025-01-01T00:00"
+                                    max="2025-01-31T23:59"
+                                />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="event-date">
+                                Preferred Date:
+                                <input
+                                    type="event-date"
+                                    name="event-date"
+                                    id="event-date"
+                                    min="2025-01-01T00:00"
+                                    max="2025-01-31T23:59"
+                                />
+                            </label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Options</legend>
+                        <p>
+                            <label for="notifications">
+                                <input
+                                    type="checkbox"
+                                    name="notifications"
+                                    id="notifications"
+                                />
+                                Receive notifications
+                            </label>
+                        </p>
+                        <p>
+                            <label for="option-one">
+                                <input
+                                    type="radio"
+                                    name="options"
+                                    id="option-one"
+                                    value="option-one"
+                                />
+                                Option 1
+                            </label>
+                        </p>
+                        <p>
+                            <label for="option-two">
+                                <input
+                                    type="radio"
+                                    name="options"
+                                    id="option-two"
+                                    value="option-two"
+                                />
+                                Option 2
+                            </label>
+                        </p>
+                    </fieldset>
+
+                    <p>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

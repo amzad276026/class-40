@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>Contact Us</h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/gallery.html">Gallery</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                    <li><a href="../pages/form.html">Form</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Contact Form</h2>
+            </div>
+            <div>
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <p>
+                            <label for="fullname">
+                                Full Name:
+                                <input
+                                    type="text"
+                                    id="fullname"
+                                    name="fullname"
+                                    placeholder="Enter your name"
+                                />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="email">
+                                Email:
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="phone">
+                                Phone:
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="Enter your Phone number"
+                                />
+                            </label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Preferred Contact Date</legend>
+                        <p>
+                            <label for="datetime">
+                                Datetime:
+                                <input
+                                    type="datetime-local"
+                                    name="datetime"
+                                    id="datetime"
+                                    min="2025-01-01T00:00"
+                                    max="2025-01-31T23:59"
+                                />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="date">
+                                Date:
+                                <input
+                                    type="date"
+                                    name="date"
+                                    id="date"
+                                    min="2025-01-01T00:00"
+                                    max="2025-01-31T23:59"
+                                />
+                            </label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Feedback</legend>
+                        <p>
+                            <label for="rating">
+                                Rating:
+                                <input
+                                    type="range"
+                                    max="10"
+                                    name="rating"
+                                    id="rating"
+                                />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="pcolor">
+                                Color Preference:
+                                <input
+                                    type="color"
+                                    name="pcolor"
+                                    id="pcolor"
+                                    value="#6a92b2"
+                                />
+                            </label>
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Subscribe</legend>
+                        <p>
+                            <label for="newsletter">
+                                <input
+                                    type="checkbox"
+                                    name="newsletter"
+                                    id="newsletter"
+                                />
+                                Subscribe to Newsletter
+                            </label>
+                        </p>
+                    </fieldset>
+
+                    <p>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

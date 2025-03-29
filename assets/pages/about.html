@@ -3,20 +3,20 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Home</title>
+        <title>About</title>
     </head>
     <body>
         <div>
             <div>
-                <h1>Welcome to Our Website</h1>
+                <h1>About Us</h1>
             </div>
             <div>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="assets/pages/about.html">About</a></li>
-                    <li><a href="assets/pages/gallery.html">Gallery</a></li>
-                    <li><a href="assets/pages/contact.html">Contact</a></li>
-                    <li><a href="assets/pages/form.html">Form</a></li>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/gallery.html">Gallery</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                    <li><a href="../pages/form.html">Form</a></li>
                 </ul>
             </div>
         </div>
@@ -27,36 +27,21 @@
             <div>
                 <form action="#" method="get">
                     <fieldset>
-                        <legend>Personal Details</legend>
+                        <legend>User Details</legend>
                         <p>
-                            <label for="fname">
-                                First Name:
+                            <label for="fullname">
+                                Full Name:
                                 <input
                                     type="text"
-                                    id="fname"
-                                    name="fname"
-                                    placeholder="Enter your first name"
+                                    id="fullname"
+                                    name="fullname"
+                                    placeholder="Enter your name"
                                 />
                             </label>
                         </p>
-                        <p>
-                            <label for="fname">
-                                Last Name:
-                                <input
-                                    type="text"
-                                    id="lname"
-                                    name="lname"
-                                    placeholder="Enter your last name"
-                                />
-                            </label>
-                        </p>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Contact Information</legend>
                         <p>
                             <label for="email">
-                                Email:
+                                Email Address:
                                 <input
                                     type="email"
                                     id="email"
@@ -65,47 +50,25 @@
                                 />
                             </label>
                         </p>
-                        <p>
-                            <label for="phone">
-                                Phone:
-                                <input
-                                    type="tel"
-                                    id="phone"
-                                    name="phone"
-                                    placeholder="Enter your phone number"
-                                />
-                            </label>
-                        </p>
                     </fieldset>
                     <fieldset>
                         <legend>Preferences</legend>
                         <p>
-                            <label for="fcolor">
-                                Favorite Color:
-                                <input type="color" name="fcolor" id="fcolor" />
-                            </label>
-                        </p>
-                        <p>
-                            <label for="amount">
-                                Amount:
-                                <input
-                                    type="number"
-                                    name="amount"
-                                    id="amount"
-                                    min="0"
-                                    max="100"
-                                />
+                            <label for="color">
+                                Choose a Color:
+                                <input type="color" name="color" id="color" />
                             </label>
                         </p>
                         <p>
                             <label for="price-range">
-                                Price Range:
+                                Preferred Price Range:
                                 <input
                                     type="range"
                                     name="price-range"
                                     id="price-range"
                                     min="0"
                                     max="100"
+                                    step="5"
                                 />
                             </label>
                         </p>
@@ -114,7 +77,7 @@
                         <legend>Date and Time</legend>
                         <p>
                             <label for="datetime">
-                                DateTime:
+                               Select  DateTime:
                                 <input
                                     type="datetime-local"
                                     name="datetime"
@@ -126,7 +89,7 @@
                         </p>
                         <p>
                             <label for="date">
-                                Date:
+                               Choose a Date:
                                 <input
                                     type="date"
                                     name="date"
@@ -141,36 +104,39 @@
                     <fieldset>
                         <legend>Options</legend>
                         <p>
-                            <label for="checkbox">
+                            <label for="subscribe">
                                 <input
                                     type="checkbox"
-                                    name="checkbox"
-                                    id="checkbox"
+                                    name="subscribe"
+                                    id="subscribe"
                                 />
-                                I agree to the terms and conditions.
+                                Subscribe to Updates
                             </label>
                         </p>
                         <p>
-                            <label for="newsletter-yes">
+                            <label for="option-one">
                                 <input
                                     type="radio"
-                                    name="newsletter"
-                                    id="newsletter-yes"
+                                    name="options"
+                                    id="option-one"
+                                    value="option-one"
                                 />
-                                Subscribe to our newsletter.
+                                Option 1
                             </label>
                         </p>
                         <p>
-                            <label for="newsletter-no">
+                            <label for="option-two">
                                 <input
                                     type="radio"
-                                    name="newsletter"
-                                    id="newsletter-no"
+                                    name="options"
+                                    id="option-two"
+                                    value="option-two"
                                 />
-                                Do not Subscribe.
+                                Option 2
                             </label>
                         </p>
                     </fieldset>
+
                     <p>
                         <button type="submit">Submit</button>
                         <button type="reset">Reset</button>
